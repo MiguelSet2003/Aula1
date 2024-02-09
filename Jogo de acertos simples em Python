@@ -1,0 +1,83 @@
+#Texto Inicial
+print("[BEM VINDO AO JOGO DE ACERTOS]")
+print("-------------------------------")
+print("° Regras:")
+print("• Para vencer tem que ter no minimo 3 pontos.")
+print("--------------------------------")
+
+#var pontuacao 
+
+pontos = 0
+
+# fun escolha 
+def escolha():
+  global pontos
+  if pergunta == certa:
+    pontos += 1
+    print("Parabens voce acertou!")
+  else:
+    print("Voce errou")
+
+# fun pontos
+
+def pontuacao():
+  ver = input("Gostaria de ver seus pontos? ")
+
+  if ver == "sim":
+    print(pontos)
+  else:
+    print("Ok")
+
+#fun final
+
+def final():
+  if pontos >= 3:
+    print("[Parabens voce ganhou!]")
+  else:
+    print("[Voce perdeu •_•]")
+
+# pergunta 1
+
+print("Onde se localiza Machu Picchu? ")
+print("[ 1 : colombia ] [ 2 : china ] [ 3 : peru ]")
+pergunta = int(input("Qual aternativa: "))
+
+certa = 3
+escolha()
+pontuacao()
+
+#pergunta 2
+
+print("Qual o maior animal terrestre? ")
+print("[ 1 : elefante ] [ 2 : girafa ] [ 3 : baleia ]")
+pergunta = int(input("Qual aternativa: "))
+
+certa = 1
+escolha()
+pontuacao()
+
+#pergunta 3
+
+print("Qual o maior animal marinho? ")
+print( "[ 1 : tubarao ] [ 2 : baleia ] [ 3 : foca ]")
+pergunta = int(input("Qual aternativa: "))
+
+certa = 2
+escolha()
+pontuacao()
+
+#pergunta 4
+
+print("Qual o maior animal do mundo? ")
+print("[ 1 : elefante ] [ 2 : girafa ] [ 3 : baleia ]")
+pergunta = int(input("Qual aternativa: "))
+
+certa = 3
+escolha()
+pontuacao()
+
+#game over
+
+final()
+
+''' criador: msantosmeirabatista@gmail.com'''
