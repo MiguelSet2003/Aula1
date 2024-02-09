@@ -1,0 +1,62 @@
+#loop infinito 
+
+while True :
+
+# Funcao para calcular
+  
+  def calc (numero, operador, numero2):
+  
+  #variaveis
+  
+    num_1 = numero
+    num_2 = numero2
+    resultado = 0
+    texto = "-[Vamos de novo!]-"
+
+  #operações
+  
+    if operador == "+":
+      resultado = num_1 + num_2
+      print(f'Seu resultado é {resultado}')
+      print(texto)
+      
+    elif operador == "-":
+      resultado = num_1 - num_2
+      print(f'Seu resultado é {resultado}')
+      print(texto)
+      
+    elif operador == "*":
+      resultado = num_1 * num_2
+      print(f'Seu resultado é {resultado}')
+      print(texto)
+      
+    elif operador == "/":
+      resultado = num_1 / num_2
+      print(f'Seu resultado é {resultado}')
+      print(texto)
+      
+    elif operador == "**":
+      resultado = num_1 ** num_2
+      print(f'Seu resultado é {resultado}')
+      print(texto)
+      
+    elif operador == "%":
+      resultado = num_1 % num_2
+      print(f'Seu resultado é {resultado}')
+      print(texto)
+      
+    elif operador == "//":
+      resultado = num_1 // num_2
+      print(f'Seu resultado é {resultado}')  
+      print(texto)
+      
+    else:
+      print("operador invalido")
+      print(texto)
+     
+#perguta ao usuarios 
+
+  calc(int(input("• Primeiro numero: ")), input("• Operador: "), int(input("• Segundo numero: "))) 
+
+''' criação: msantosmeirabatista@gmail.com
+11 978704638 '''
